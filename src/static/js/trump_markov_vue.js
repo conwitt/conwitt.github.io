@@ -3,14 +3,12 @@
 ** Author: Connor Witt
 */
 
-// browserify src/static/js/trump_markov_vue.js -o bundle.js
-
 const axios = require('axios');
 const textUtil = require('./text_util');
 const audioUtil = require('./audio_util');
 
 // TODO: Generate URLS
-const TRUMP_TWEET_URL = 'http://localhost:8000/trump-markov';
+const TRUMP_TWEET_URL = 'http://66.249.66.27:8000/trump-markov';
 
 // Vue app
 var potusVsAi = new Vue({
