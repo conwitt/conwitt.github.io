@@ -1545,7 +1545,7 @@ const textUtil = require('./text_util');
 const audioUtil = require('./audio_util');
 
 // TODO: Generate URLS
-const TRUMP_TWEET_URL = 'https://conwitt-markov.herokuapp.com/trump-markov/';
+const TRUMP_TWEET_URL = 'http://localhost:8000/trump-markov/';
 
 // Vue app
 var potusVsAi = new Vue({
@@ -1566,7 +1566,6 @@ var potusVsAi = new Vue({
       axios.get(TRUMP_TWEET_URL)
         .then((response) => {
           if (this.tweet === null) {
-            console.log('Yessir');
             this.answerFeedback.text = 'Ready!';
             this.answerFeedback.correct = true;
           }
