@@ -1,0 +1,114 @@
+
+/*
+*Trump seal background:
+https://cdn.pixabay.com/photo/2018/05/04/04/08/decoration-3373197_960_720.jpg
+* Trump cartoon background:
+https://cdn.pixabay.com/photo/2017/01/31/19/15/cartoon-2026571_960_720.png
+* Trump profile pic:
+https://pbs.twimg.com/profile_images/874276197357596672/kUuht00m_400x400.jpg
+* Trump at podium:
+https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Donald_Trump_%2829496131773%29.jpg/800px-Donald_Trump_%2829496131773%29.jpg
+*/
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Donald_Trump_%2829496131773%29.jpg/800px-Donald_Trump_%2829496131773%29.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.header {
+  font-size: 36;
+  text-align: center;
+  text-shadow:
+		-1px -1px 0 white,
+		1px -1px 0 white,
+		-1px 1px 0 white,
+		1px 1px 0 white;
+}
+
+.header-image {
+  content: "";
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/800px-Flag_of_the_United_States.svg.png");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 85%;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.trump-profile-image {
+  float: left;
+  margin-top: 3px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.tweet-box {
+  margin: auto;
+  width: 50%;
+  border: 3px solid lightgrey;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.tweet-text {
+  position: relative;
+  text-align: center;
+  font-size: 18;
+  text-shadow:
+		-0.5px -0.5px 0 white,
+		0.5px -0.5px 0 white,
+		-0.5px 0.5px 0 white,
+		0.5px 0.5px 0 white;
+}
+
+.answer-wrong {
+  color: #BF0A30;
+  text-shadow:
+		-0.5px -0.5px 0 white,
+		0.5px -0.5px 0 white,
+		-0.5px 0.5px 0 white,
+		0.5px 0.5px 0 white;
+}
+
+.answer-right {
+  color: #002868;
+  text-shadow:
+		-0.5px -0.5px 0 white,
+		0.5px -0.5px 0 white,
+		-0.5px 0.5px 0 white,
+		0.5px 0.5px 0 white;
+}
+
+.result-text {
+  text-align: center;
+  margin-right: 48;
+  font-size: 36;
+}
+
+.score-text {
+  font-size: 20;
+  margin-left: 10px;
+}
+
+.answer-button-row {
+  text-align: center;
+}
+
+.answer-button {
+  cursor: pointer;
+  font-size: 20;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 10px;
+}

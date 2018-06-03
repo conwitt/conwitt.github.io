@@ -1,0 +1,41 @@
+
+<div class="header">
+  <h1>Trump or Shitty A.I.</h1>
+  <span class="header-image"><span>
+</div>
+<div id="TweetApp" class="tweet-box">
+  <div class="profile-row">
+    <span>
+      <img class="trump-profile-image" src="https://pbs.twimg.com/profile_images/874276197357596672/kUuht00m_400x400.jpg" alt="Fjords" width="300" height="200">
+    </span>
+    <span class="score-text">
+      Score: {{ score }}/{{ total }}
+    </span>
+  </div>
+  <div>
+    <div class="result-text">
+      <span v-bind:class="{
+        'answer-right': answerFeedback.correct,
+        'answer-wrong': !(answerFeedback.correct)
+      }"
+      v-html="answerFeedback.text">
+      </span>
+    </div>
+  <div>
+    <p class="tweet-text" v-html="tweet"></p>
+  </div>
+  <div class=answer-button-row>
+    <button class="answer-button" :disabled="buttonsDisabled"
+    v-on:click="checkAnswer(true)">Trump
+    </button>
+    <button class="answer-button" :disabled="buttonsDisabled"
+    v-on:click="checkAnswer(false)">Shitty A.I.
+   </button>
+  </div>
+</div>
+</div>
+
+<link rel="stylesheet" type="text/css" href="src/static/css/style.css" media="screen" />
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+<script src="bundle.js" type="text/javascript"></script>
+<script src="src/static/js/require.js" type="text/javascript"></script>
